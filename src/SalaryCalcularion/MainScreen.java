@@ -24,7 +24,7 @@ public class MainScreen extends JFrame {
 	JLabel title = new JLabel("Cálculo Salário");
 	JLabel label1 = new JLabel("Horas Trabalhadas: ");
 	JLabel label2 = new JLabel("Valor/Hora: ");
-	JLabel resultTitle = new JLabel("resultado: ");
+	JLabel resultTitle = new JLabel("Salário: ");
 	JLabel resultValue = new JLabel("  " + Float.toString(result));
 	
 	//TEXT FIELDS
@@ -42,10 +42,11 @@ public class MainScreen extends JFrame {
 		setLocation(150, 100);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(false);
-		setVisible(true);
 		
 		mainScreen.setLayout(new BoxLayout(mainScreen, BoxLayout.PAGE_AXIS));
 		mainScreen.setBackground(Color.white);
+		
+		setVisible(true);
 		
 		title.setFont(f1);
 		title.setForeground(Color.black);
